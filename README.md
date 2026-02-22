@@ -4,6 +4,15 @@ A high-performance, production-ready landing page for **SafeBite**, a mobile app
 
 This project explores a modern tech stack focused on accessibility, internationalization (i18n), and SEO optimization.
 
+## 📱 Product Overview: SafeBite
+
+SafeBite is an essential mobile companion for families living with **Cow's Milk Protein Allergy (CMPA/APLV)**. The app simplifies grocery shopping by providing:
+
+- **Instant Ingredient Scanning:** Using local OCR to identify hidden dairy derivatives (casein, whey, etc.) in seconds.
+- **100% Offline Intelligence:** No internet required—works perfectly inside supermarkets or basements where signal is weak.
+- **Privacy-First Design:** All image processing happens on-device; no personal data or photos are ever sent to external servers.
+- **Peace of Mind:** Designed to reduce the anxiety of label reading and prevent accidental allergic reactions.
+
 ## 🚀 Key Technical Features
 
 ### 🌍 Internationalization (i18n)
