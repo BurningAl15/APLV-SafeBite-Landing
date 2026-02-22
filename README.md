@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SafeBite Landing Page
 
-## Getting Started
+A high-performance, production-ready landing page for **SafeBite**, a mobile application designed for families managing Cow's Milk Protein Allergy (CMPA/APLV). 
 
-First, run the development server:
+This project explores a modern tech stack focused on accessibility, internationalization (i18n), and SEO optimization.
+
+## 🚀 Key Technical Features
+
+### 🌍 Internationalization (i18n)
+- **Framework:** Orchestrated with `next-intl`.
+- **Routing:** Dynamic locale-based routing (`/en`, `/es`) with automatic browser language detection.
+- **Client/Server Synergy:** Seamless translation integration across both Server Components and Client Components.
+- **Dynamic Context:** Language switcher preserves the user's current route while toggling locales.
+
+### 🔍 Search Engine Optimization (SEO)
+- **Dynamic Metadata:** Implements `generateMetadata` for localized titles, descriptions, and OpenGraph tags.
+- **Search Readiness:** Automated `sitemap.xml` and `robots.txt` generation via Next.js Metadata API.
+- **Mobile Hook:** Integrated Apple Smart App Banners and localized meta keywords for niche market discovery.
+
+### ⚡ UX & Modern Design
+- **Smooth Navigation:** Global smooth-scroll implementation for high-fidelity transitions between sections.
+- **Performance:** Leveraging Next.js App Router and Turbopack for near-instant page loads.
+- **Responsive Layouts:** Mobile-first architecture with strict padding management for small devices.
+- **Reusable Architecture:** Unified `LegalLayout` system for scalable creation of compliance pages (Privacy, Terms, Support, etc.).
+
+## 🏗️ Tech Stack
+
+- **Framework:** [Next.js 15+](https://nextjs.org) (App Router)
+- **Logic:** TypeScript
+- **Styling:** Tailwind CSS 4
+- **i18n:** next-intl
+- **Deployment:** Vercel
+
+## 🛠️ Getting Started
+
+First, install dependencies:
+
+```bash
+npm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📦 Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Optimized for Vercel. Simply connect your repository and the project will auto-configure based on `next.config.ts`.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+*Developed by **Aldhair Vera** & **FatCat Game Studio** to promote digital solutions for health and safety.*

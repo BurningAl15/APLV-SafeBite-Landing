@@ -1,0 +1,118 @@
+{
+    "Story": {
+        "problemTitle": "El Desafío Invisible",
+        "problemLead": "Para una familia con APLV, ir al supermercado no es una tarea simple: es un campo minado.",
+        "problemBody": "Leer cada etiqueta, buscar derivados ocultos como el caseinatos o suero de leche, y descifrar advertencias de 'puede contener trazas' toma tiempo y genera ansiedad. Un error puede significar una reacción alérgica grave.",
+        "solutionTitle": "Tu Guardián de Bolsillo",
+        "solutionLead": "SafeBite convierte la duda en certeza en menos de un segundo.",
+        "solutionBody": "Nuestra tecnología de escaneo offline identifica instantáneamente los peligros ocultos. Sin necesidad de internet, sin complicaciones, directo al grano.",
+        "step1Title": "1. Escanea",
+        "step1Desc": "Apunta la cámara a la lista de ingredientes.",
+        "step2Title": "2. Detecta",
+        "step2Desc": "Nuestra IA offline busca trazas y derivados.",
+        "step3Title": "3. Decide",
+        "step3Desc": "Compra con la tranquilidad de una respuesta clara."
+    },
+    "Scenarios": {
+        "title": "Situaciones Reales",
+        "case1Title": "El ingrediente oculto",
+        "case1Desc": "¿Sabías que el 'caseinato de sodio' es leche? SafeBite lo detecta al instante aunque el fabricante no lo resalte.",
+        "case2Title": "En casa de los abuelos",
+        "case2Desc": "Cuando alguien más cocina, SafeBite ayuda a verificar los ingredientes de la alacena rápidamente para evitar sustos.",
+        "case3Title": "Supermercado sin señal",
+        "case3Desc": "Muchos supermercados son 'zonas muertas'. SafeBite funciona 100% offline, siempre disponible."
+    },
+    "Features": {
+        "ocrTitle": "Escaneo Instantáneo",
+        "ocrDesc": "Apunta tu cámara a cualquier etiqueta y recibe una respuesta inmediata sobre la seguridad del producto.",
+        "offlineTitle": "100% Offline",
+        "offlineDesc": "Toda la inteligencia ocurre en tu teléfono. Funciona en sótanos y supermercados sin señal.",
+        "dairyTitle": "Protección APLV",
+        "dairyDesc": "Algoritmos especializados en detectar derivados lácteos ocultos como caseína, suero y trazas.",
+        "historyTitle": "Historial Seguro",
+        "historyDesc": "Guarda tus productos favoritos y lleva un registro de tus escaneos para consultas rápidas."
+    },
+    "HomePage": {
+        "title": "SafeBite",
+        "headline": "Información APLV",
+        "subheadline": "Recursos y cuidados para tu bebé"
+    },
+    "Footer": {
+        "author": "Hecho con <heart>♥</heart> por <name>Aldhair Vera</name>",
+        "product": "© 2025 Safe Bite.",
+        "privacy": "Privacidad",
+        "terms": "Términos",
+        "ageRating": "Clasificación de Edad",
+        "credits": "Créditos",
+        "support": "Soporte",
+        "back": "Volver"
+    },
+    "Support": {
+        "title": "Soporte",
+        "intro": "¿Necesitas ayuda con SafeBite? Estamos aquí para escucharte.",
+        "email": "fatcatgamestudio.oc@gmail.com",
+        "responseTime": "Tiempo estimado de respuesta: 24-48 horas hábiles."
+    },
+    "AgeRating": {
+        "title": "Clasificación de Edad",
+        "rating": "4+",
+        "body": "SafeBite está clasificado para todas las edades. No contiene contenido violento, sexual, ni lenguaje inapropiado. Es una herramienta segura para toda la familia."
+    },
+    "Credits": {
+        "title": "Créditos",
+        "body": "SafeBite es una creación de Aldhair Vera, desarrollada con pasión por el equipo de FatCat Game Studio. Agradecimientos especiales a la comunidad por ayudar a identificar ingredientes locales y mejorar la seguridad de todos."
+    },
+    "InfoSection": {
+        "whatIsAplv": "¿Qué es la APLV?",
+        "aplvDescription": "Es una reacción exagerada del sistema inmune a las proteínas de la leche de vaca (Caseína y Suero). No es lo mismo que intolerancia a la lactosa.",
+        "basicTag": "Básico",
+        "quickGuide": "Guía Rápida",
+        "ingredientsToAvoid": "Ingredientes a evitar",
+        "ingredientsBody": "• Leche de vaca (en todas sus formas)\n• Caseína y Caseinatos\n• Suero de leche (Whey)\n• Lactosa (puede contener trazas)\n• Crema, Mantequilla, Queso, Yogur\n• Recato de Annato (a veces tiene leche)",
+        "shoppingTips": "Consejos de compra",
+        "shoppingBody": "• Lee SIEMPRE la etiqueta, incluso si ya conoces el producto.\n• Busca la frase 'Contiene: Leche' al final de la lista.\n• Ten cuidado con la contaminación cruzada ('Puede contener...', 'Procesado en equipo...').\n• Prefiere alimentos con sellos certificados 'Vegan' o 'Sin Lácteos'.",
+        "usefulResources": "Recursos útiles",
+        "resourcesBody": "• Sustitutos: Leche de almendra, soja, arroz, avena.\n• Calcio: Brócoli, espinacas, almendras, tofu fortificado.\n• Para cocinar: Usa aceite de coco o margarina vegetal en lugar de mantequilla.",
+        "emergencyTitle": "Emergencia / Anafilaxia",
+        "severeSymptoms": "Síntomas graves:",
+        "symptomsBody": "• Dificultad para respirar / sibilancias\n• Hinchazón de lengua o garganta\n• Desmayo o mareo severo",
+        "emergencyStep1": "1. Usar Epinefrina",
+        "emergencyStep2": "2. Llamar al 911 / Urgencias"
+    },
+    "Privacy": {
+        "title": "Política de Privacidad",
+        "lastUpdated": "Última actualización: 22 de Febrero, 2026",
+        "intro": "En SafeBite, valoramos tu privacidad y la seguridad de tu información. Esta política describe cómo manejamos tus datos en nuestra aplicación móvil.",
+        "designTitle": "1. Privacidad por Diseño (Offline-First)",
+        "designBody": "La característica principal de SafeBite es su capacidad de procesar información localmente. El escaneo de etiquetas (OCR) se realiza completamente en tu dispositivo. Tus imágenes nunca se envían a nuestros servidores ni a terceros para su análisis.",
+        "collectionTitle": "2. Información que Recolectamos",
+        "collectionBody": "No recolectamos información personal identificable a menos que decidas proporcionárnosla voluntariamente.\n• Datos de Diagnóstico: Logs de errores anónimos.\n• Datos de Uso: Información técnica anónima sobre interacciones.",
+        "cameraTitle": "3. Uso de la Cámara",
+        "cameraBody": "SafeBite solicita permiso para usar la cámara únicamente para escanear etiquetas. No guardamos fotos en tu galería sin permiso.",
+        "thirdPartyTitle": "4. Terceros",
+        "thirdPartyBody": "Usamos Google ML Kit para OCR local y RevenueCat para suscripciones (usa ID anónimos).",
+        "rightsTitle": "5. Tus Derechos",
+        "rightsBody": "Puedes borrar tu historial desde los ajustes de la app.",
+        "disclaimerTitle": "6. Descargo de Responsabilidad Médico",
+        "disclaimerBody": "SafeBite es una herramienta informativa. No es un dispositivo médico. Verifica siempre las etiquetas físicamente.",
+        "contact": "Contacto: fatcatgamestudio.oc@gmail.com"
+    },
+    "Terms": {
+        "title": "Términos de Servicio",
+        "lastUpdated": "Última actualización: 22 de Febrero, 2026",
+        "intro": "Al usar SafeBite, aceptas los siguientes términos.",
+        "usageTitle": "1. Uso del Servicio",
+        "usageBody": "SafeBite es para uso personal y no comercial para ayudar a identificar ingredientes lácteos.",
+        "disclaimerTitle": "2. Descargo de Responsabilidad",
+        "disclaimerBody": "NO somos responsables de reacciones alérgicas. La tecnología OCR puede fallar. El usuario es responsable final de verificar los ingredientes.",
+        "paymentTitle": "3. Suscripciones",
+        "paymentBody": "Las funciones Premium se gestionan a través de la App Store / Play Store.",
+        "changesTitle": "4. Cambios",
+        "changesBody": "Nos reservamos el derecho de modificar estos términos en cualquier momento."
+    },
+    "Metadata": {
+        "title": "SafeBite | Escáner de Alergia a la Leche (APLV)",
+        "description": "Escanea etiquetas de alimentos al instante. Detecta lácteos ocultos y compra con seguridad, incluso sin internet. La herramienta esencial para familias con APLV.",
+        "keywords": "milk allergy, food scanner, ingredients scan, APLV, alergia leche, escáner comida"
+    }
+}
