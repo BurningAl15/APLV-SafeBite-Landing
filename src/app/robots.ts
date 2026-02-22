@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: '/',
             disallow: '/private/',
         },
-        sitemap: 'https://safebite.app/sitemap.xml',
+        sitemap: 'https://safe-bite-landing.vercel.app/sitemap.xml',
     };
 }

@@ -13,10 +13,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     description: t('description'),
     keywords: t('keywords').split(',').map(k => k.trim()),
     authors: [{ name: "Aldhair Vera" }],
-    icons: {
-      icon: "/brand-logo.png",
-      apple: "/brand-logo.png",
-    },
     openGraph: {
       title: t('title'),
       description: t('description'),
