@@ -7,7 +7,7 @@ export default function Hero() {
     const t = useTranslations('HomePage');
 
     return (
-        <section className="w-full max-w-5xl mx-auto pt-20 pb-16 px-8 flex flex-col items-center text-center">
+        <section id="hero" className="w-full max-w-5xl mx-auto pt-20 pb-16 px-8 flex flex-col items-center text-center">
             <div className="flex items-center gap-3 mb-10 transition-opacity hover:opacity-80">
                 <Image
                     className="rounded-full shadow-md border-2 border-white"
@@ -27,8 +27,7 @@ export default function Hero() {
                 {t('subheadline')}
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 items-center justify-center w-full">
-
+            <div className="flex flex-col sm:flex-row gap-4 items-center justify-center w-full mb-20">
                 <a
                     href="https://apps.apple.com/app/safebite/id123456789"
                     target="_blank"
@@ -44,7 +43,6 @@ export default function Hero() {
                     </div>
                 </a>
 
-
                 <a
                     href="https://play.google.com/store/apps/details?id=com.FatCatGameStudio.SafeBite"
                     target="_blank"
@@ -59,6 +57,17 @@ export default function Hero() {
                         <span className="text-xl font-bold">Google Play</span>
                     </div>
                 </a>
+            </div>
+
+            <div className="relative w-full max-w-4xl mx-auto px-4">
+                <div className="absolute inset-0 bg-primary/5 blur-[120px] rounded-full scale-75 -z-10" />
+                <Image
+                    src="/safebite_hero_mockup.png"
+                    alt="SafeBite App Mockup"
+                    width={1200}
+                    height={800}
+                    className="w-full h-auto drop-shadow-2xl"
+                />
             </div>
         </section>
     );

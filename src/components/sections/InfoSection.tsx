@@ -35,7 +35,6 @@ export default function InfoSection() {
     return (
         <section className="w-full max-w-3xl mx-auto flex flex-col items-center sm:items-start pb-16 px-8">
 
-            {/* Featured Card: What is APLV? */}
             <div className="bg-[#FDE68A] rounded-3xl p-6 mb-8 shadow-sm relative overflow-hidden flex flex-col items-start w-full text-left">
                 <div className="bg-white/80 self-start px-3 py-1 rounded-full mb-3">
                     <span className="text-[#D97706] text-xs font-bold uppercase">{t('basicTag')}</span>
@@ -46,7 +45,6 @@ export default function InfoSection() {
                 </p>
             </div>
 
-            {/* Quick Guide Accordion */}
             <h2 className="text-2xl font-bold text-gray-800 mb-4 self-start">{t('quickGuide')}</h2>
 
             <div className="w-full flex flex-col gap-4">
@@ -74,7 +72,6 @@ export default function InfoSection() {
                             </div>
                         </button>
 
-                        {/* Expandable Content */}
                         {expandedSection === item.id && (
                             <div className="px-5 pb-5 pt-0">
                                 <div className="h-[1px] bg-gray-100 mb-4 w-full" />
@@ -87,7 +84,6 @@ export default function InfoSection() {
                 ))}
             </div>
 
-            {/* Emergency Card */}
             <div className="bg-red-50 border-2 border-red-100 rounded-3xl p-6 mt-8 w-full text-left">
                 <div className="flex flex-row items-center mb-4 gap-3">
                     <div className="bg-white p-2.5 rounded-xl shadow-sm">

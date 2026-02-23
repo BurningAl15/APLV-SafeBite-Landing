@@ -34,8 +34,8 @@
     },
     "HomePage": {
         "title": "SafeBite",
-        "headline": "CMA Information",
-        "subheadline": "Resources and care for your baby"
+        "headline": "Your Instant Milk Allergy Shield",
+        "subheadline": "Scan food labels in a second. Detect hidden dairy, shop with confidence, and keep your baby safe. 100% Offline."
     },
     "Footer": {
         "author": "Made with <heart>♥</heart> by <name>Aldhair Vera</name>",
@@ -55,8 +55,13 @@
     },
     "AgeRating": {
         "title": "Age Rating",
-        "rating": "4+",
-        "body": "SafeBite is rated for all ages. It contains no violent, sexual, or inappropriate content. It is a safe tool for the entire family."
+        "appleLabel": "App Store (iOS)",
+        "appleRating": "13+",
+        "androidLabel": "Google Play (Android)",
+        "androidRating": "3+",
+        "intro": "SafeBite adheres to the safety and health guidelines of each platform to ensure a safe experience for families.",
+        "appleDetail": "Rated 13+ due to the nature of health and medical information related to CMPA allergies. This ensures content is used responsibly by adults managing dietary safety.",
+        "androidDetail": "Rated 3+ (minimum possible) for general safety, although its target audience is adults (18+) responsible for household health and allergy management."
     },
     "Credits": {
         "title": "Credits",
@@ -96,6 +101,31 @@
         "disclaimerTitle": "6. Medical Disclaimer",
         "disclaimerBody": "SafeBite is an informational tool. It is not a medical device. Always physically verify labels.",
         "contact": "Contact: fatcatgamestudio.oc@gmail.com"
+    },
+    "Pricing": {
+        "title": "Simple & Transparent",
+        "subtitle": "Choose the plan that fits your family's needs.",
+        "freeTitle": "Free",
+        "freePrice": "$0",
+        "freePeriod": "forever",
+        "freeFeature1": "3 daily base scans",
+        "freeFeature2": "Up to 6 rewarded scans per day",
+        "freeFeature3": "Basic ingredient analysis",
+        "freeFeature4": "Offline scanning included",
+        "weeklyTitle": "Weekly",
+        "weeklyPrice": "$1.99",
+        "weeklyPeriod": "/ weekly",
+        "monthlyTitle": "Monthly",
+        "monthlyPrice": "$4.99",
+        "monthlyPeriod": "/ monthly",
+        "yearlyTitle": "Annual",
+        "yearlyPrice": "$29.99",
+        "yearlyPeriod": "/ year",
+        "proFeature1": "Unlimited daily scans",
+        "proFeature2": "Save product photos in history",
+        "proFeature3": "Advanced derivative detection",
+        "proFeature4": "No ads, ever",
+        "cta": "Start Scanning"
     },
     "Terms": {
         "title": "Terms of Service",

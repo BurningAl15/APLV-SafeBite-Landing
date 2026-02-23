@@ -1,13 +1,18 @@
-"use client";
-
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
+import { Scan, Search, ShieldCheck } from 'lucide-react';
 
 export default function ProblemSolution() {
     const t = useTranslations('Story');
 
+    const steps = [
+        { num: 1, icon: Scan },
+        { num: 2, icon: Search },
+        { num: 3, icon: ShieldCheck },
+    ];
+
     return (
         <section className="w-full max-w-5xl mx-auto py-20 px-8 flex flex-col gap-24">
-
             <div className="flex flex-col md:flex-row items-center gap-12">
                 <div className="flex-1">
                     <h2 className="text-sm uppercase font-black text-danger tracking-widest mb-4">
@@ -20,17 +25,21 @@ export default function ProblemSolution() {
                         {t('problemBody')}
                     </p>
                 </div>
-                <div className="flex-1 bg-secondary/20 rounded-[40px] p-8 aspect-square flex items-center justify-center">
-                    <div className="text-8xl italic font-black text-secondary/40 select-none">{"⚠️"}</div>
+                <div className="flex-1 bg-secondary/20 rounded-[40px] overflow-hidden aspect-square flex items-center justify-center relative group">
+                    <Image
+                        src="/problem_anxiety_supermarket.png"
+                        alt="Anxious supermarket shopping"
+                        fill
+                        className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-danger/10 group-hover:bg-transparent transition-colors duration-500" />
                 </div>
             </div>
-
-
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                {[1, 2, 3].map((num) => (
+                {steps.map(({ num, icon: Icon }) => (
                     <div key={num} className="flex flex-col items-center text-center p-6 grayscale hover:grayscale-0 transition-all duration-500">
-                        <div className="w-16 h-16 rounded-full bg-primary text-white flex items-center justify-center text-2xl font-black mb-6 shadow-lg shadow-primary/20">
-                            {num}
+                        <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-6 transition-all duration-300 group">
+                            <Icon size={32} strokeWidth={2.5} className="group-hover:scale-110 transition-transform" />
                         </div>
                         <h3 className="text-xl font-bold text-text mb-3">
                             {t(`step${num}Title` as any)}
@@ -41,8 +50,6 @@ export default function ProblemSolution() {
                     </div>
                 ))}
             </div>
-
-
             <div className="flex flex-col md:flex-row-reverse items-center gap-12">
                 <div className="flex-1">
                     <h2 className="text-sm uppercase font-black text-primary tracking-widest mb-4">
@@ -55,8 +62,13 @@ export default function ProblemSolution() {
                         {t('solutionBody')}
                     </p>
                 </div>
-                <div className="flex-1 bg-primary/10 rounded-[40px] p-8 aspect-square flex items-center justify-center border-4 border-dashed border-primary/20">
-                    <div className="text-8xl italic font-black text-primary/40 select-none">{"🛡️"}</div>
+                <div className="flex-1 bg-primary/10 rounded-[40px] overflow-hidden aspect-square flex items-center justify-center border-4 border-dashed border-primary/20 relative group">
+                    <Image
+                        src="/solution_shield_check.png"
+                        alt="Safe scan solution"
+                        fill
+                        className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
                 </div>
             </div>
         </section>

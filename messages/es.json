@@ -34,8 +34,8 @@
     },
     "HomePage": {
         "title": "SafeBite",
-        "headline": "Información APLV",
-        "subheadline": "Recursos y cuidados para tu bebé"
+        "headline": "Tu Escudo Inteligente Contra Lácteos",
+        "subheadline": "Escanea etiquetas en un segundo. Detecta lácteos ocultos, compra con confianza y protege a tu bebé. 100% Offline."
     },
     "Footer": {
         "author": "Hecho con <heart>♥</heart> por <name>Aldhair Vera</name>",
@@ -55,8 +55,13 @@
     },
     "AgeRating": {
         "title": "Clasificación de Edad",
-        "rating": "4+",
-        "body": "SafeBite está clasificado para todas las edades. No contiene contenido violento, sexual, ni lenguaje inapropiado. Es una herramienta segura para toda la familia."
+        "appleLabel": "App Store (iOS)",
+        "appleRating": "13+",
+        "androidLabel": "Google Play (Android)",
+        "androidRating": "3+",
+        "intro": "SafeBite se adhiere a las directrices de seguridad y salud de cada plataforma para garantizar una experiencia segura para las familias.",
+        "appleDetail": "Clasificado como 13+ debido a la naturaleza de la información médica y de salud relacionada con las alergias APLV. Esto asegura que el contenido sea utilizado responsablemente por adultos.",
+        "androidDetail": "Clasificado como 3+ (mínimo posible) por seguridad general, aunque su público objetivo son adultos (18+) responsables de la gestión de salud y alergias en el hogar."
     },
     "Credits": {
         "title": "Créditos",
@@ -96,6 +101,31 @@
         "disclaimerTitle": "6. Descargo de Responsabilidad Médico",
         "disclaimerBody": "SafeBite es una herramienta informativa. No es un dispositivo médico. Verifica siempre las etiquetas físicamente.",
         "contact": "Contacto: fatcatgamestudio.oc@gmail.com"
+    },
+    "Pricing": {
+        "title": "Simple y Transparente",
+        "subtitle": "Elige el plan que mejor se adapte a tu familia.",
+        "freeTitle": "Gratis",
+        "freePrice": "$0",
+        "freePeriod": "para siempre",
+        "freeFeature1": "3 escaneos base diarios",
+        "freeFeature2": "Hasta 6 escaneos extra con anuncios",
+        "freeFeature3": "Análisis básico de ingredientes",
+        "freeFeature4": "Escaneo offline incluido",
+        "weeklyTitle": "Semanal",
+        "weeklyPrice": "$1.99",
+        "weeklyPeriod": "/ semanal",
+        "monthlyTitle": "Mensual",
+        "monthlyPrice": "$4.99",
+        "monthlyPeriod": "/ mensual",
+        "yearlyTitle": "Anual",
+        "yearlyPrice": "$29.99",
+        "yearlyPeriod": "/ año",
+        "proFeature1": "Escaneos diarios ilimitados",
+        "proFeature2": "Guarda fotos en el historial",
+        "proFeature3": "Detección avanzada de derivados",
+        "proFeature4": "Sin anuncios, nunca",
+        "cta": "Empieza a Escanear"
     },
     "Terms": {
         "title": "Términos de Servicio",

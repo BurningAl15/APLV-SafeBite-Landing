@@ -32,13 +32,27 @@ SafeBite is an essential mobile companion for families living with **Cow's Milk 
 - **Responsive Layouts:** Mobile-first architecture with strict padding management for small devices.
 - **Reusable Architecture:** Unified `LegalLayout` system for scalable creation of compliance pages (Privacy, Terms, Support, etc.).
 
-## 🏗️ Tech Stack
-
 - **Framework:** [Next.js 15+](https://nextjs.org) (App Router)
 - **Logic:** TypeScript
 - **Styling:** Tailwind CSS 4
 - **i18n:** next-intl
 - **Deployment:** Vercel
+
+## 🏛️ App Store & Play Store Compliance
+
+This landing page serves as the official metadata hub for SafeBite's store submissions:
+- **Privacy Policy:** [Localized Privacy Policy](https://safe-bite-landing.vercel.app/en/privacy)
+- **Terms of Service:** [Localized Terms](https://safe-bite-landing.vercel.app/en/terms)
+- **Support:** [Support Center](https://safe-bite-landing.vercel.app/en/support)
+- **Age Rating:** [Rating Declaration](https://safe-bite-landing.vercel.app/en/age-rating)
+- **Smart App Banner:** Safari-integrated banner for seamless app discovery.
+
+## 🗺️ Pre-Launch Roadmap (Tracking via ShipKit)
+
+We are currently in the **Polishing Phase**, finalizing the following core components:
+1. **[IN PROGRESS]** Monetization: RevenueCat IAP Integration.
+2. **[IN PROGRESS]** Ads: AdMob Rewarded Scan Implementation.
+3. **[IN PROGRESS]** Core UX: Comprehensive OCR and Photo Accuracy Validation.
 
 ## 🛠️ Getting Started
 
@@ -58,7 +72,7 @@ Open [http://localhost:3000](http://localhost:3000) to see the result.
 
 ## 📦 Deployment
 
-Optimized for Vercel. Simply connect your repository and the project will auto-configure based on `next.config.ts`.
+Optimized for Vercel. Simply connect your repository and the project will auto-configure based on `next.config.ts`. The custom `middleware.ts` handles localized routing for all compliance pages.
 
 ---
 *Developed by **Aldhair Vera** & **FatCat Game Studio** to promote digital solutions for health and safety.*
