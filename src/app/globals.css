@@ -11,7 +11,7 @@
   --color-background: #F8FAFC;
   --color-surface: #FFFFFF;
   --color-text: #1F2937;
-  --color-subtext: #9CA3AF;
+  --color-subtext: #6B7280;
 
   /* App uses system default fonts */
   --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -20,6 +20,13 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+/* Keyboard-navigation focus ring */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+  border-radius: 4px;
 }
 
 body {

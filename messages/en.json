@@ -30,7 +30,8 @@
         "dairyTitle": "CMPA Protection",
         "dairyDesc": "Specialized algorithms to detect hidden dairy derivatives like casein, whey, and traces.",
         "historyTitle": "Safe History",
-        "historyDesc": "Save your favorite products and keep a record of your scans for quick reference."
+        "historyDesc": "Save your favorite products and keep a record of your scans for quick reference.",
+        "sectionHeading": "App Features"
     },
     "HomePage": {
         "title": "SafeBite",
@@ -39,7 +40,7 @@
     },
     "Footer": {
         "author": "Made with <heart>♥</heart> by <name>Aldhair Vera</name>",
-        "product": "© 2025 Safe Bite.",
+        "product": "© 2026 Safe Bite.",
         "privacy": "Privacy",
         "terms": "Terms",
         "ageRating": "Age Rating",
@@ -108,10 +109,10 @@
         "freeTitle": "Free",
         "freePrice": "$0",
         "freePeriod": "forever",
-        "freeFeature1": "3 daily base scans",
-        "freeFeature2": "Up to 6 rewarded scans per day",
-        "freeFeature3": "Basic ingredient analysis",
-        "freeFeature4": "Offline scanning included",
+        "freeFeature1": "3 Basic daily scans included",
+        "freeFeature2": "Extra scans with rewarded ads",
+        "freeFeature3": "Core CMPA ingredient detection",
+        "freeFeature4": "100% Offline local engine",
         "weeklyTitle": "Weekly",
         "weeklyPrice": "$1.99",
         "weeklyPeriod": "/ weekly",
@@ -121,10 +122,10 @@
         "yearlyTitle": "Annual",
         "yearlyPrice": "$29.99",
         "yearlyPeriod": "/ year",
-        "proFeature1": "Unlimited daily scans",
-        "proFeature2": "Save product photos in history",
-        "proFeature3": "Advanced derivative detection",
-        "proFeature4": "No ads, ever",
+        "proFeature1": "Unlimited daily scans (Priority Processing)",
+        "proFeature2": "Save & track scans with product photos",
+        "proFeature3": "Advanced detection (100+ dairy derivatives)",
+        "proFeature4": "Premium experience: No ads, ever",
         "cta": "Start Scanning"
     },
     "Terms": {

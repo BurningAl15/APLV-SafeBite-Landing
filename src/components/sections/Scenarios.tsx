@@ -11,14 +11,14 @@ export default function Scenarios() {
     ];
 
     return (
-        <section className="w-full max-w-6xl mx-auto py-24 px-8">
-            <h2 className="text-4xl font-black text-text mb-16 text-center lg:text-left tracking-tight">
+        <section className="w-full max-w-6xl mx-auto py-24 px-8" aria-labelledby="scenarios-heading">
+            <h2 id="scenarios-heading" className="text-4xl font-black text-text mb-16 text-center lg:text-left tracking-tight">
                 {t('title')}
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <ul role="list" className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {cases.map(({ id, icon: Icon, color, bg }) => (
-                    <div key={id} className="group p-10 rounded-[40px] border border-gray-100 bg-white shadow-sm hover:shadow-xl hover:scale-[1.02] transition-all duration-300 flex flex-col items-start gap-6">
-                        <div className={`w-14 h-14 rounded-2xl ${bg} ${color} flex items-center justify-center transition-transform group-hover:rotate-6`}>
+                    <li key={id} className="group p-10 rounded-[40px] border border-gray-100 bg-white shadow-sm hover:shadow-xl hover:scale-[1.02] transition-all duration-300 flex flex-col items-start gap-6">
+                        <div className={`w-14 h-14 rounded-2xl ${bg} ${color} flex items-center justify-center transition-transform group-hover:rotate-6`} aria-hidden="true">
                             <Icon size={28} strokeWidth={2.5} />
                         </div>
                         <div className="space-y-3">
@@ -29,9 +29,9 @@ export default function Scenarios() {
                                 {t(`case${id}Desc` as any)}
                             </p>
                         </div>
-                    </div>
+                    </li>
                 ))}
-            </div>
+            </ul>
         </section>
     );
 }

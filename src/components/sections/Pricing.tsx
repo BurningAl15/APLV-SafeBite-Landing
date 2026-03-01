@@ -61,9 +61,9 @@ export default function Pricing() {
     ];
 
     return (
-        <section className="w-full max-w-6xl mx-auto py-24 px-8" id="pricing">
+        <section className="w-full max-w-6xl mx-auto py-24 px-8" id="pricing" aria-labelledby="pricing-heading">
             <div className="text-center mb-16">
-                <h2 className="text-4xl md:text-5xl font-black text-text mb-4">
+                <h2 id="pricing-heading" className="text-4xl md:text-5xl font-black text-text mb-4">
                     {t('title')}
                 </h2>
                 <p className="text-xl text-subtext font-medium text-balance max-w-2xl mx-auto">
@@ -81,7 +81,7 @@ export default function Pricing() {
                             }`}
                     >
                         {tier.highlighted && (
-                            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-secondary text-primary text-[10px] font-black uppercase tracking-widest px-4 py-1.5 rounded-full shadow-sm">
+                            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-secondary text-primary text-[10px] font-black uppercase tracking-widest px-4 py-1.5 rounded-full shadow-sm" aria-label="Best Value plan">
                                 Best Value
                             </div>
                         )}
@@ -97,12 +97,12 @@ export default function Pricing() {
                             </div>
                         </div>
 
-                        <ul className="space-y-4 mb-10 flex-1">
+                        <ul className="space-y-4 mb-10 flex-1" role="list">
                             {tier.features.map((feature, fIndex) => (
                                 <li key={fIndex} className="flex items-start gap-3 text-sm">
                                     <div className={`flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center mt-0.5 ${tier.highlighted ? 'bg-white/20 text-white' : 'bg-primary/10 text-primary'
-                                        }`}>
-                                        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        }`} aria-hidden="true">
+                                        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                                         </svg>
                                     </div>
@@ -113,15 +113,17 @@ export default function Pricing() {
                             ))}
                         </ul>
 
-                        <button
-                            onClick={() => document.getElementById('hero')?.scrollIntoView({ behavior: 'smooth' })}
-                            className={`w-full py-4 rounded-2xl font-bold text-base transition-all ${tier.highlighted
+                        {/* Anchor link instead of JS button — improves LCP/TBT, works without JS */}
+                        <a
+                            href="#hero"
+                            aria-label={`${tier.cta} – ${tier.name} plan`}
+                            className={`w-full py-4 rounded-2xl font-bold text-base transition-all text-center block ${tier.highlighted
                                 ? 'bg-white text-primary hover:bg-gray-100'
                                 : 'bg-primary text-white hover:bg-primary/90 shadow-lg shadow-primary/10'
                                 }`}
                         >
                             {tier.cta}
-                        </button>
+                        </a>
                     </div>
                 ))}
             </div>

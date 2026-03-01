@@ -30,7 +30,8 @@
         "dairyTitle": "Protección APLV",
         "dairyDesc": "Algoritmos especializados en detectar derivados lácteos ocultos como caseína, suero y trazas.",
         "historyTitle": "Historial Seguro",
-        "historyDesc": "Guarda tus productos favoritos y lleva un registro de tus escaneos para consultas rápidas."
+        "historyDesc": "Guarda tus productos favoritos y lleva un registro de tus escaneos para consultas rápidas.",
+        "sectionHeading": "Funciones de la App"
     },
     "HomePage": {
         "title": "SafeBite",
@@ -39,7 +40,7 @@
     },
     "Footer": {
         "author": "Hecho con <heart>♥</heart> por <name>Aldhair Vera</name>",
-        "product": "© 2025 Safe Bite.",
+        "product": "© 2026 Safe Bite.",
         "privacy": "Privacidad",
         "terms": "Términos",
         "ageRating": "Clasificación de Edad",
@@ -108,10 +109,10 @@
         "freeTitle": "Gratis",
         "freePrice": "$0",
         "freePeriod": "para siempre",
-        "freeFeature1": "3 escaneos base diarios",
-        "freeFeature2": "Hasta 6 escaneos extra con anuncios",
-        "freeFeature3": "Análisis básico de ingredientes",
-        "freeFeature4": "Escaneo offline incluido",
+        "freeFeature1": "3 escaneos básicos al día",
+        "freeFeature2": "Escaneos extra con anuncios",
+        "freeFeature3": "Detección de ingredientes core APLV",
+        "freeFeature4": "Motor local 100% Offline",
         "weeklyTitle": "Semanal",
         "weeklyPrice": "$1.99",
         "weeklyPeriod": "/ semanal",
@@ -121,10 +122,10 @@
         "yearlyTitle": "Anual",
         "yearlyPrice": "$29.99",
         "yearlyPeriod": "/ año",
-        "proFeature1": "Escaneos diarios ilimitados",
-        "proFeature2": "Guarda fotos en el historial",
-        "proFeature3": "Detección avanzada de derivados",
-        "proFeature4": "Sin anuncios, nunca",
+        "proFeature1": "Escaneos ilimitados (Procesamiento Prioritario)",
+        "proFeature2": "Guarda y sigue escaneos con fotos reales",
+        "proFeature3": "Detección avanzada (+100 derivados lácteos)",
+        "proFeature4": "Experiencia Premium: Sin anuncios, nunca",
         "cta": "Empieza a Escanear"
     },
     "Terms": {

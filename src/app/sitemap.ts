@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://safe-bite-landing.vercel.app';
+    const baseUrl = 'https://safe-bite-landing.vercel.app'; // TODO: update to production domain when ready
     const locales = ['en', 'es'];
     const paths = ['', '/privacy', '/terms', '/support', '/age-rating', '/credits'];
 
