@@ -3,54 +3,61 @@ import { getMessages, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import "../globals.css";
+import type { Metadata } from 'next';
 
-const BASE_URL = 'https://safe-bite-landing.vercel.app';
+const baseUrl = 'https://safe-bite-landing.vercel.app';
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
-  const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'Metadata' });
-
-  return {
-    metadataBase: new URL(BASE_URL),
+export const metadata: Metadata = {
+  metadataBase: new URL(baseUrl),
+  title: {
+    default: 'SafeBite: Milk Allergy Scanner | CMPA & APLV Support',
+    template: '%s | SafeBite'
+  },
+  description: 'Protect your family from hidden dairy. Fast, private, and works offline. Scan labels anywhere to detect milk protein triggers instantly with total peace of mind.',
+  keywords: ['milk allergy', 'cmpa', 'aplv', 'scanner', 'label scanner', 'ingredients', 'ocr', 'offline', 'parents', 'dairy-free', 'safety'],
+  authors: [{ name: 'FatCat Game Studio' }],
+  creator: 'FatCat Game Studio',
+  publisher: 'FatCat Game Studio',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  alternates: {
+    canonical: '/',
+  },
+  itunes: {
+    appId: '6759540131',
+    appArgument: 'safebite://',
+  },
+  openGraph: {
+    title: 'SafeBite: Milk Allergy Scanner | CMPA & APLV Support',
+    description: 'Protect your family from hidden dairy. Fast, private, and works offline. Scan labels anywhere to detect milk protein triggers instantly with total peace of mind.',
+    url: baseUrl,
+    siteName: "SafeBite",
+    images: [
+      {
+        url: "/brand-logo.png",
+        width: 800,
+        height: 800,
+        alt: "SafeBite App Logo",
+      },
+    ],
+    locale: locale === 'es' ? 'es_ES' : 'en_US',
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
     title: t('title'),
     description: t('description'),
-    keywords: t('keywords').split(',').map(k => k.trim()),
-    authors: [{ name: "Aldhair Vera" }],
-    alternates: {
-      canonical: `${BASE_URL}/${locale}`,
-      languages: {
-        'en': `${BASE_URL}/en`,
-        'es': `${BASE_URL}/es`,
-      },
-    },
-    openGraph: {
-      title: t('title'),
-      description: t('description'),
-      url: `${BASE_URL}/${locale}`,
-      siteName: "SafeBite",
-      images: [
-        {
-          url: "/brand-logo.png",
-          width: 800,
-          height: 800,
-          alt: "SafeBite App Logo",
-        },
-      ],
-      locale: locale === 'es' ? 'es_ES' : 'en_US',
-      type: "website",
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: t('title'),
-      description: t('description'),
-      images: ["/brand-logo.png"],
-    },
-    // TODO: Replace app-id below with your real Apple App Store numeric ID
-    // (visible in App Store Connect → App Information → Apple ID)
-    other: {
-      "apple-itunes-app": "app-id=REPLACE_WITH_REAL_ID",
-    },
-  };
+    images: ["/brand-logo.png"],
+  },
+  // TODO: Replace app-id below with your real Apple App Store numeric ID
+  // (visible in App Store Connect → App Information → Apple ID)
+  other: {
+    "apple-itunes-app": "app-id=REPLACE_WITH_REAL_ID",
+  },
+};
 }
 
 export default async function RootLayout({

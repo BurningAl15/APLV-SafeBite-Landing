@@ -1,15 +1,15 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://safe-bite-landing.vercel.app'; // TODO: update to production domain when ready
+    const baseUrl = 'https://safe-bite-landing.vercel.app';
     const locales = ['en', 'es'];
     const paths = ['', '/privacy', '/terms', '/support', '/age-rating', '/credits'];
 
-    const sitemap: MetadataRoute.Sitemap = [];
+    const sitemapEntries: MetadataRoute.Sitemap = [];
 
     locales.forEach((locale) => {
         paths.forEach((path) => {
-            sitemap.push({
+            sitemapEntries.push({
                 url: `${baseUrl}/${locale}${path}`,
                 lastModified: new Date(),
                 changeFrequency: 'monthly',
@@ -18,5 +18,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
         });
     });
 
-    return sitemap;
+    return sitemapEntries;
 }
