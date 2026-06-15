@@ -6,9 +6,9 @@ export default function ProblemSolution() {
     const t = useTranslations('Story');
 
     const steps = [
-        { num: 1, icon: Scan },
-        { num: 2, icon: Search },
-        { num: 3, icon: ShieldCheck },
+        { titleKey: 'step1Title', descKey: 'step1Desc', icon: Scan },
+        { titleKey: 'step2Title', descKey: 'step2Desc', icon: Search },
+        { titleKey: 'step3Title', descKey: 'step3Desc', icon: ShieldCheck },
     ];
 
     return (
@@ -41,16 +41,16 @@ export default function ProblemSolution() {
 
             {/* Steps */}
             <ol className="grid grid-cols-1 md:grid-cols-3 gap-8 list-none p-0 m-0">
-                {steps.map(({ num, icon: Icon }) => (
-                    <li key={num} className="flex flex-col items-center text-center p-6 grayscale hover:grayscale-0 transition-all duration-500">
+                {steps.map(({ titleKey, descKey, icon: Icon }) => (
+                    <li key={titleKey} className="flex flex-col items-center text-center p-6 grayscale hover:grayscale-0 transition-all duration-500">
                         <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-6 transition-all duration-300" aria-hidden="true">
                             <Icon size={32} strokeWidth={2.5} />
                         </div>
                         <h3 className="text-xl font-bold text-text mb-3">
-                            {t(`step${num}Title` as any)}
+                            {t(titleKey)}
                         </h3>
                         <p className="text-subtext">
-                            {t(`step${num}Desc` as any)}
+                            {t(descKey)}
                         </p>
                     </li>
                 ))}

@@ -2,13 +2,15 @@
 
 import { useTranslations, useLocale } from 'next-intl';
 import { Link, usePathname } from '@/i18n/routing';
+import { routing } from '@/i18n/routing';
 
 export default function Footer() {
     const t = useTranslations('Footer');
     const pathname = usePathname();
     const currentLocale = useLocale();
+    type Locale = (typeof routing.locales)[number];
 
-    const languages = [
+    const languages: Array<{ code: Locale; label: string; flag: string }> = [
         { code: 'en', label: 'English', flag: '🇺🇸' },
         { code: 'es', label: 'Español', flag: '🇪🇸' },
     ];
@@ -49,8 +51,8 @@ export default function Footer() {
                 {languages.map((lang) => (
                     <Link
                         key={lang.code}
-                        href={pathname as any}
-                        locale={lang.code as any}
+                        href={pathname}
+                        locale={lang.code}
                         aria-label={`Switch language to ${lang.label}`}
                         aria-current={currentLocale === lang.code ? 'true' : undefined}
                         className={`flex items-center gap-2 px-5 py-2.5 rounded-2xl text-sm font-bold transition-all shadow-sm border ${currentLocale === lang.code

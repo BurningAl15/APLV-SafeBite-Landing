@@ -29,7 +29,7 @@ export default function Hero() {
 
             <div className="flex flex-col sm:flex-row gap-4 items-center justify-center w-full mb-20" role="group" aria-label="Download SafeBite">
                 <a
-                    href="https://apps.apple.com/app/safebite/id123456789"
+                    href="https://apps.apple.com/app/safebite/id6759540131"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Download SafeBite on the App Store"
@@ -65,7 +65,7 @@ export default function Hero() {
                 <div className="absolute inset-0 bg-primary/5 blur-[120px] rounded-full scale-75 -z-10" aria-hidden="true" />
                 <Image
                     src="/safebite_hero_mockup.png"
-                    alt="SafeBite app screenshot showing a food label scan with a safety result"
+                    alt="SafeBite app screenshot showing a food label scan review"
                     width={1200}
                     height={800}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"

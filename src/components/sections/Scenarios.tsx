@@ -5,9 +5,9 @@ export default function Scenarios() {
     const t = useTranslations('Scenarios');
 
     const cases = [
-        { id: 1, icon: Search, color: "text-blue-500", bg: "bg-blue-50" },
-        { id: 2, icon: Home, color: "text-orange-500", bg: "bg-orange-50" },
-        { id: 3, icon: WifiOff, color: "text-red-500", bg: "bg-red-50" }
+        { titleKey: 'case1Title', descKey: 'case1Desc', icon: Search, color: "text-blue-500", bg: "bg-blue-50" },
+        { titleKey: 'case2Title', descKey: 'case2Desc', icon: Home, color: "text-orange-500", bg: "bg-orange-50" },
+        { titleKey: 'case3Title', descKey: 'case3Desc', icon: WifiOff, color: "text-red-500", bg: "bg-red-50" }
     ];
 
     return (
@@ -16,17 +16,17 @@ export default function Scenarios() {
                 {t('title')}
             </h2>
             <ul role="list" className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                {cases.map(({ id, icon: Icon, color, bg }) => (
-                    <li key={id} className="group p-10 rounded-[40px] border border-gray-100 bg-white shadow-sm hover:shadow-xl hover:scale-[1.02] transition-all duration-300 flex flex-col items-start gap-6">
+                {cases.map(({ titleKey, descKey, icon: Icon, color, bg }) => (
+                    <li key={titleKey} className="group p-10 rounded-[40px] border border-gray-100 bg-white shadow-sm hover:shadow-xl hover:scale-[1.02] transition-all duration-300 flex flex-col items-start gap-6">
                         <div className={`w-14 h-14 rounded-2xl ${bg} ${color} flex items-center justify-center transition-transform group-hover:rotate-6`} aria-hidden="true">
                             <Icon size={28} strokeWidth={2.5} />
                         </div>
                         <div className="space-y-3">
                             <h3 className="text-2xl font-bold text-text group-hover:text-primary transition-colors">
-                                {t(`case${id}Title` as any)}
+                                {t(titleKey)}
                             </h3>
                             <p className="text-lg text-subtext leading-relaxed font-medium">
-                                {t(`case${id}Desc` as any)}
+                                {t(descKey)}
                             </p>
                         </div>
                     </li>

@@ -1,42 +1,42 @@
 {
     "Story": {
         "problemTitle": "El Desafío Invisible",
-        "problemLead": "Para una familia con APLV, ir al supermercado no es una tarea simple: es un campo minado.",
-        "problemBody": "Leer cada etiqueta, buscar derivados ocultos como el caseinatos o suero de leche, y descifrar advertencias de 'puede contener trazas' toma tiempo y genera ansiedad. Un error puede significar una reacción alérgica grave.",
-        "solutionTitle": "Tu Guardián de Bolsillo",
-        "solutionLead": "SafeBite convierte la duda en certeza en menos de un segundo.",
-        "solutionBody": "Nuestra tecnología de escaneo offline identifica instantáneamente los peligros ocultos. Sin necesidad de internet, sin complicaciones, directo al grano.",
+        "problemLead": "Para una familia que gestiona APLV, revisar etiquetas en el supermercado puede tomar tiempo y atención.",
+        "problemBody": "Leer cada etiqueta, buscar términos como caseinatos o suero de leche, y revisar frases de 'puede contener' puede ser estresante. SafeBite ayuda a hacer esa revisión más rápida, pero la etiqueta física completa siempre sigue siendo la fuente de verdad.",
+        "solutionTitle": "Una Revisión Más Rápida",
+        "solutionLead": "SafeBite ayuda a encontrar posibles términos relacionados con leche en pocos segundos.",
+        "solutionBody": "La app usa reconocimiento de texto en el dispositivo para revisar etiquetas localmente. No necesitas internet para el escaneo principal, y las fotos del producto no se suben para el análisis OCR.",
         "step1Title": "1. Escanea",
         "step1Desc": "Apunta la cámara a la lista de ingredientes.",
         "step2Title": "2. Detecta",
-        "step2Desc": "Nuestra IA offline busca trazas y derivados.",
+        "step2Desc": "El motor local revisa posibles términos relacionados con leche y advertencias de trazas.",
         "step3Title": "3. Decide",
-        "step3Desc": "Compra con la tranquilidad de una respuesta clara."
+        "step3Desc": "Revisa el resumen y verifica la etiqueta física completa."
     },
     "Scenarios": {
         "title": "Situaciones Reales",
         "case1Title": "El ingrediente oculto",
-        "case1Desc": "¿Sabías que el 'caseinato de sodio' es leche? SafeBite lo detecta al instante aunque el fabricante no lo resalte.",
+        "case1Desc": "Términos como 'caseinato de sodio' pueden pasar desapercibidos. SafeBite ayuda a resaltarlos durante la revisión.",
         "case2Title": "En casa de los abuelos",
-        "case2Desc": "Cuando alguien más cocina, SafeBite ayuda a verificar los ingredientes de la alacena rápidamente para evitar sustos.",
+        "case2Desc": "Cuando alguien más cocina, SafeBite puede ayudar a revisar ingredientes de la alacena más rápido.",
         "case3Title": "Supermercado sin señal",
-        "case3Desc": "Muchos supermercados son 'zonas muertas'. SafeBite funciona 100% offline, siempre disponible."
+        "case3Desc": "Muchos supermercados tienen poca señal. La revisión principal de SafeBite funciona localmente en tu teléfono."
     },
     "Features": {
-        "ocrTitle": "Escaneo Instantáneo",
-        "ocrDesc": "Apunta tu cámara a cualquier etiqueta y recibe una respuesta inmediata sobre la seguridad del producto.",
-        "offlineTitle": "100% Offline",
+        "ocrTitle": "Revisión Rápida",
+        "ocrDesc": "Apunta tu cámara a una etiqueta de ingredientes y revisa posibles términos relacionados con leche.",
+        "offlineTitle": "OCR en el Dispositivo",
         "offlineDesc": "Toda la inteligencia ocurre en tu teléfono. Funciona en sótanos y supermercados sin señal.",
-        "dairyTitle": "Protección APLV",
-        "dairyDesc": "Algoritmos especializados en detectar derivados lácteos ocultos como caseína, suero y trazas.",
-        "historyTitle": "Historial Seguro",
+        "dairyTitle": "Revisión de Términos Lácteos",
+        "dairyDesc": "Revisa palabras como caseína, suero, lactosa, derivados de leche y advertencias de trazas.",
+        "historyTitle": "Historial de Revisiones",
         "historyDesc": "Guarda tus productos favoritos y lleva un registro de tus escaneos para consultas rápidas.",
         "sectionHeading": "Funciones de la App"
     },
     "HomePage": {
         "title": "SafeBite",
-        "headline": "Tu Escudo Inteligente Contra Lácteos",
-        "subheadline": "Escanea etiquetas en un segundo. Detecta lácteos ocultos, compra con confianza y protege a tu bebé. 100% Offline."
+        "headline": "Revisa Términos de Leche en Etiquetas",
+        "subheadline": "Escanea etiquetas de ingredientes con OCR en el dispositivo. Revisa posibles términos relacionados con leche, advertencias de trazas e historial de productos."
     },
     "Footer": {
         "author": "Hecho con <heart>♥</heart> por <name>Aldhair Vera</name>",
@@ -60,13 +60,13 @@
         "appleRating": "13+",
         "androidLabel": "Google Play (Android)",
         "androidRating": "3+",
-        "intro": "SafeBite se adhiere a las directrices de seguridad y salud de cada plataforma para garantizar una experiencia segura para las familias.",
+        "intro": "SafeBite sigue los requisitos de publicación de cada plataforma para una app informativa de revisión de etiquetas.",
         "appleDetail": "Clasificado como 13+ debido a la naturaleza de la información médica y de salud relacionada con las alergias APLV. Esto asegura que el contenido sea utilizado responsablemente por adultos.",
         "androidDetail": "Clasificado como 3+ (mínimo posible) por seguridad general, aunque su público objetivo son adultos (18+) responsables de la gestión de salud y alergias en el hogar."
     },
     "Credits": {
         "title": "Créditos",
-        "body": "SafeBite es una creación de Aldhair Vera, desarrollada con pasión por el equipo de FatCat Game Studio. Agradecimientos especiales a la comunidad por ayudar a identificar ingredientes locales y mejorar la seguridad de todos."
+        "body": "SafeBite es una creación de Aldhair Vera, desarrollada por FatCat Game Studio. Agradecimientos especiales a la comunidad por ayudar a mejorar la cobertura de términos de ingredientes."
     },
     "InfoSection": {
         "whatIsAplv": "¿Qué es la APLV?",
@@ -92,13 +92,13 @@
         "designTitle": "1. Privacidad por Diseño (Offline-First)",
         "designBody": "La característica principal de SafeBite es su capacidad de procesar información localmente. El escaneo de etiquetas (OCR) se realiza completamente en tu dispositivo. Tus imágenes nunca se envían a nuestros servidores ni a terceros para su análisis.",
         "collectionTitle": "2. Información que Recolectamos",
-        "collectionBody": "No recolectamos información personal identificable a menos que decidas proporcionárnosla voluntariamente.\n• Datos de Diagnóstico: Logs de errores anónimos.\n• Datos de Uso: Información técnica anónima sobre interacciones.",
+        "collectionBody": "Recolectamos solo los datos necesarios para operar las funciones que usas.\n• Datos de cuenta: Correo y detalles de perfil cuando creas una cuenta.\n• Historial de escaneos: Datos de revisiones guardadas para historial autenticado y sincronización familiar.\n• Datos de diagnóstico: Registros de errores y cierres inesperados.\n• Datos de uso: Información técnica sobre interacciones y anuncios.",
         "cameraTitle": "3. Uso de la Cámara",
         "cameraBody": "SafeBite solicita permiso para usar la cámara únicamente para escanear etiquetas. No guardamos fotos en tu galería sin permiso.",
         "thirdPartyTitle": "4. Terceros",
-        "thirdPartyBody": "Usamos Google ML Kit para OCR local y RevenueCat para suscripciones (usa ID anónimos).",
+        "thirdPartyBody": "Usamos Google ML Kit para OCR local, Supabase para cuenta y sincronización, RevenueCat para suscripciones, Firebase para analítica y diagnóstico, y Google Mobile Ads para anuncios recompensados.",
         "rightsTitle": "5. Tus Derechos",
-        "rightsBody": "Puedes borrar tu historial desde los ajustes de la app.",
+        "rightsBody": "Puedes borrar historial, gestionar tu cuenta, restaurar compras o solicitar eliminación de cuenta desde los ajustes de la app.",
         "disclaimerTitle": "6. Descargo de Responsabilidad Médico",
         "disclaimerBody": "SafeBite es una herramienta informativa. No es un dispositivo médico. Verifica siempre las etiquetas físicamente.",
         "contact": "Contacto: fatcatgamestudio.oc@gmail.com"
@@ -122,10 +122,10 @@
         "yearlyTitle": "Anual",
         "yearlyPrice": "$29.99",
         "yearlyPeriod": "/ año",
-        "proFeature1": "Escaneos ilimitados (Procesamiento Prioritario)",
-        "proFeature2": "Guarda y sigue escaneos con fotos reales",
-        "proFeature3": "Detección avanzada (+100 derivados lácteos)",
-        "proFeature4": "Experiencia Premium: Sin anuncios, nunca",
+        "proFeature1": "Revisiones ilimitadas de etiquetas",
+        "proFeature2": "Guarda y consulta productos revisados",
+        "proFeature3": "Revisión de términos lácteos y advertencias de trazas",
+        "proFeature4": "Experiencia Premium sin anuncios recompensados",
         "cta": "Empieza a Escanear"
     },
     "Terms": {
@@ -142,8 +142,8 @@
         "changesBody": "Nos reservamos el derecho de modificar estos términos en cualquier momento."
     },
     "Metadata": {
-        "title": "SafeBite | Escáner de Alergia a la Leche (APLV)",
-        "description": "Escanea etiquetas de alimentos al instante. Detecta lácteos ocultos y compra con seguridad, incluso sin internet. La herramienta esencial para familias con APLV.",
-        "keywords": "milk allergy, food scanner, ingredients scan, APLV, alergia leche, escáner comida"
+        "title": "SafeBite | Revisión de Etiquetas de Leche",
+        "description": "Revisa etiquetas de ingredientes para posibles términos relacionados con leche usando OCR en el dispositivo. Rápido, privado y útil con señal limitada.",
+        "keywords": "etiquetas leche, revision ingredientes, APLV, CMPA, terminos lacteos, OCR en dispositivo"
     }
 }
