@@ -73,7 +73,7 @@ export default function ProblemSolution() {
                 <div className="flex-1 bg-primary/10 rounded-[40px] overflow-hidden aspect-square flex items-center justify-center border-4 border-dashed border-primary/20 relative group">
                     <Image
                         src="/solution_shield_check.png"
-                        alt="SafeBite app showing a green checkmark confirming a scanned label is dairy-free"
+                        alt="SafeBite app showing a food label scan review on a mobile device"
                         fill
                         sizes="(max-width: 768px) 100vw, 50vw"
                         className="object-cover transition-transform duration-700 group-hover:scale-110"

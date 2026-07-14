@@ -8,10 +8,10 @@ This project explores a modern tech stack focused on accessibility, internationa
 
 SafeBite is an essential mobile companion for families living with **Cow's Milk Protein Allergy (CMPA/APLV)**. The app simplifies grocery shopping by providing:
 
-- **Instant Ingredient Scanning:** Using local OCR to identify hidden dairy derivatives (casein, whey, etc.) in seconds.
-- **100% Offline Intelligence:** No internet required—works perfectly inside supermarkets or basements where signal is weak.
+- **Fast Ingredient Review:** Uses local OCR to highlight possible dairy-related terms (casein, whey, etc.) in seconds.
+- **Offline Main Scan:** The core label scan runs on-device and remains useful in supermarkets or other places with weak signal.
 - **Privacy-First Design:** All image processing happens on-device; no personal data or photos are ever sent to external servers.
-- **Peace of Mind:** Designed to reduce the anxiety of label reading and prevent accidental allergic reactions.
+- **Calmer Label Review:** Designed to reduce label-reading friction while keeping the physical label as the source of truth.
 
 ## 🚀 Key Technical Features
 

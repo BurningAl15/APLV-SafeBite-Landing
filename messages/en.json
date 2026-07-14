@@ -3,40 +3,40 @@
         "problemTitle": "The Invisible Challenge",
         "problemLead": "For a family managing CMPA, supermarket label review can take time and focus.",
         "problemBody": "Reading every label, looking for terms like caseinates or whey, and checking 'may contain' wording can be stressful. SafeBite helps make that review faster, but the physical label always stays the source of truth.",
-        "solutionTitle": "A Faster Label Review",
-        "solutionLead": "SafeBite helps surface possible milk-related terms in a few seconds.",
-        "solutionBody": "The app uses on-device text recognition to review ingredient labels locally. No internet required for the core scan, and no product photos are uploaded for OCR analysis.",
+        "solutionTitle": "A faster label check",
+        "solutionLead": "SafeBite helps highlight possible milk-related terms in seconds.",
+        "solutionBody": "The main scan works directly on your phone. No internet is needed to read the label, and product photos are not uploaded for analysis.",
         "step1Title": "1. Scan",
-        "step1Desc": "Point your camera at the ingredients list.",
-        "step2Title": "2. Detect",
-        "step2Desc": "The local engine reviews possible milk-related terms and trace warnings.",
-        "step3Title": "3. Decide",
-        "step3Desc": "Review the summary, then verify the full physical label."
+        "step1Desc": "Point your camera at the ingredient list.",
+        "step2Title": "2. Review",
+        "step2Desc": "SafeBite highlights possible milk-related terms and trace warnings.",
+        "step3Title": "3. Verify",
+        "step3Desc": "Read the full physical label and confirm before making decisions."
     },
     "Scenarios": {
         "title": "Real World Situations",
-        "case1Title": "The hidden ingredient",
-        "case1Desc": "Terms like 'sodium caseinate' can be easy to miss. SafeBite helps surface them during label review.",
-        "case2Title": "At the grandparents' house",
-        "case2Desc": "When someone else is cooking, SafeBite can help review pantry ingredients more quickly.",
-        "case3Title": "Supermarket with no signal",
-        "case3Desc": "Many supermarkets have weak signal. SafeBite's core label review works locally on your phone."
+        "case1Title": "Hidden milk terms",
+        "case1Desc": "Words like sodium caseinate or whey can be easy to miss. SafeBite helps you spot them faster.",
+        "case2Title": "When someone else is cooking",
+        "case2Desc": "Review pantry labels faster when meals are prepared by family, friends, or caregivers.",
+        "case3Title": "Works with no signal",
+        "case3Desc": "The main label scan works on your phone, so you can check ingredients even in supermarkets with poor connection."
     },
     "Features": {
-        "ocrTitle": "Quick Label Review",
-        "ocrDesc": "Point your camera at an ingredient label and review possible milk-related terms.",
-        "offlineTitle": "On-Device OCR",
-        "offlineDesc": "All intelligence happens on your phone. Works in basements and supermarkets with no signal.",
-        "dairyTitle": "Milk-Term Review",
-        "dairyDesc": "Reviews words like casein, whey, lactose, milk derivatives, and trace-warning wording.",
-        "historyTitle": "Review History",
-        "historyDesc": "Save your favorite products and keep a record of your scans for quick reference.",
+        "ocrTitle": "Quick label checks",
+        "ocrDesc": "Point your camera at an ingredient list and see possible milk-related terms in seconds.",
+        "offlineTitle": "Works on your phone",
+        "offlineDesc": "The main scan reads labels directly on your device, even with poor signal.",
+        "dairyTitle": "Milk-related terms",
+        "dairyDesc": "Looks for words like casein, whey, lactose, milk derivatives, and trace warnings.",
+        "historyTitle": "Product history",
+        "historyDesc": "Save reviewed products so you can check them again later.",
         "sectionHeading": "App Features"
     },
     "HomePage": {
         "title": "SafeBite",
-        "headline": "Review Milk Terms on Food Labels",
-        "subheadline": "Scan ingredient labels with on-device OCR. Review possible milk-related terms, trace warnings, and saved product history."
+        "headline": "Find possible dairy ingredients in seconds",
+        "subheadline": "Scan food labels and review terms like milk, casein, whey, lactose, and trace warnings. The scan works on your phone, even without internet."
     },
     "Footer": {
         "author": "Made with <heart>♥</heart> by <name>Aldhair Vera</name>",
@@ -46,7 +46,8 @@
         "ageRating": "Age Rating",
         "credits": "Credits",
         "support": "Support",
-        "back": "Back"
+        "back": "Back",
+        "disclaimer": "SafeBite is an informational tool. It does not provide medical advice or guarantee product safety. Always read the full label."
     },
     "Support": {
         "title": "Support",
@@ -70,7 +71,7 @@
     },
     "InfoSection": {
         "whatIsAplv": "What is CMPA?",
-        "aplvDescription": "It's an exaggerated immune system reaction to cow's milk proteins (Casein and Whey). It's not the same as lactose intolerance.",
+        "aplvDescription": "CMPA is an immune reaction to proteins found in cow’s milk, such as casein and whey. It is different from lactose intolerance.",
         "basicTag": "Basic",
         "quickGuide": "Quick Guide",
         "ingredientsToAvoid": "Ingredients to avoid",
@@ -79,24 +80,22 @@
         "shoppingBody": "• ALWAYS read the label, even if you already know the product.\n• Look for the phrase 'Contains: Milk' at the bottom of the list.\n• Beware of cross-contamination ('May contain...', 'Processed on equipment...').\n• Prefer foods with certified 'Vegan' or 'Dairy-Free' seals.",
         "usefulResources": "Useful resources",
         "resourcesBody": "• Substitutes: Almond, soy, rice, oat milk.\n• Calcium: Broccoli, spinach, almonds, fortified tofu.\n• For cooking: Use coconut oil or vegetable margarine instead of butter.",
-        "emergencyTitle": "Emergency / Anaphylaxis",
-        "severeSymptoms": "Severe symptoms:",
-        "symptomsBody": "• Difficulty breathing / wheezing\n• Swelling of tongue or throat\n• Faintness or severe dizziness",
-        "emergencyStep1": "1. Use Epinephrine",
-        "emergencyStep2": "2. Call 911 / ER"
+        "emergencyTitle": "Emergency information",
+        "severeSymptoms": "For severe symptoms such as difficulty breathing, swelling of the tongue or throat, or faintness, follow your medical emergency plan and contact emergency services immediately.",
+        "epinephrineNotice": "If epinephrine has been prescribed, follow your doctor’s instructions and call emergency services immediately."
     },
     "Privacy": {
         "title": "Privacy Policy",
         "lastUpdated": "Last updated: February 22, 2026",
         "intro": "At SafeBite, we value your privacy and the security of your information. This policy describes how we handle your data in our mobile application.",
         "designTitle": "1. Privacy by Design (Offline-First)",
-        "designBody": "SafeBite's core feature is its ability to process information locally. Label scanning (OCR) is performed entirely on your device. Your images are never sent to our servers or third parties for analysis.",
+        "designBody": "SafeBite's core feature is its ability to process information locally. Label scanning is performed entirely on your device. Your images are never sent to our servers or third parties for analysis.",
         "collectionTitle": "2. Information We Collect",
         "collectionBody": "We collect only the data needed to operate the app features you use.\n• Account Data: Email and profile details when you create an account.\n• Scan History: Saved product review data for authenticated history and household sync.\n• Diagnostic Data: Crash and error logs.\n• Usage Data: Technical information about app interactions and ads.",
         "cameraTitle": "3. Camera Usage",
         "cameraBody": "SafeBite requests permission to use the camera solely for scanning labels. We do not save photos to your gallery without permission.",
         "thirdPartyTitle": "4. Third Parties",
-        "thirdPartyBody": "We use Google ML Kit for local OCR, Supabase for account and sync features, RevenueCat for subscriptions, Firebase for analytics and crash diagnostics, and Google Mobile Ads for rewarded ads.",
+        "thirdPartyBody": "We use Google ML Kit for local text recognition, Supabase for account and sync features, RevenueCat for subscriptions, Firebase for analytics and crash diagnostics, and Google Mobile Ads for rewarded ads.",
         "rightsTitle": "5. Your Rights",
         "rightsBody": "You can clear history, manage your account, restore purchases, or request account deletion from the app settings.",
         "disclaimerTitle": "6. Medical Disclaimer",
@@ -109,10 +108,10 @@
         "freeTitle": "Free",
         "freePrice": "$0",
         "freePeriod": "forever",
-        "freeFeature1": "3 Basic daily scans included",
+        "freeFeature1": "3 daily label scans",
         "freeFeature2": "Extra scans with rewarded ads",
-        "freeFeature3": "Core CMPA ingredient detection",
-        "freeFeature4": "100% Offline local engine",
+        "freeFeature3": "Checks milk-related terms",
+        "freeFeature4": "Main scan works offline",
         "weeklyTitle": "Weekly",
         "weeklyPrice": "$1.99",
         "weeklyPeriod": "/ weekly",
@@ -122,10 +121,10 @@
         "yearlyTitle": "Annual",
         "yearlyPrice": "$29.99",
         "yearlyPeriod": "/ year",
-        "proFeature1": "Unlimited daily label reviews",
-        "proFeature2": "Save and track reviewed products",
-        "proFeature3": "Milk-related term and trace-warning review",
-        "proFeature4": "Premium experience without rewarded ads",
+        "proFeature1": "Unlimited label scans",
+        "proFeature2": "Save product history",
+        "proFeature3": "Checks milk terms and trace warnings",
+        "proFeature4": "No rewarded ads",
         "cta": "Start Scanning"
     },
     "Terms": {
@@ -135,7 +134,7 @@
         "usageTitle": "1. Use of Service",
         "usageBody": "SafeBite is for personal, non-commercial use to help identify dairy ingredients.",
         "disclaimerTitle": "2. Disclaimer",
-        "disclaimerBody": "We are NOT responsible for allergic reactions. OCR technology can fail. The user is ultimately responsible for verifying ingredients.",
+        "disclaimerBody": "We are NOT responsible for allergic reactions. Text recognition technology can fail. The user is ultimately responsible for verifying ingredients.",
         "paymentTitle": "3. Subscriptions",
         "paymentBody": "Premium features are managed through the App Store / Play Store.",
         "changesTitle": "4. Changes",
@@ -143,7 +142,7 @@
     },
     "Metadata": {
         "title": "SafeBite | Milk Label Scan",
-        "description": "Review ingredient labels for possible milk-related terms with on-device OCR. Fast, private, and useful when signal is limited.",
-        "keywords": "milk label scan, ingredient label review, CMPA, APLV, dairy terms, on-device OCR"
+        "description": "Review ingredient labels for possible milk-related terms directly on your phone. Fast, private, and useful when signal is limited.",
+        "keywords": "milk label scan, ingredient label review, CMPA, APLV, dairy terms, works on your phone"
     }
 }
