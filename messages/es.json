@@ -144,5 +144,14 @@
         "title": "SafeBite | Revisión de Etiquetas de Leche",
         "description": "Revisa etiquetas de ingredientes para posibles términos relacionados con leche directamente en tu teléfono. Rápido, privado y útil con señal limitada.",
         "keywords": "etiquetas leche, revision ingredientes, APLV, CMPA, terminos lacteos, funciona en tu telefono"
+    },
+    "OtherApps": {
+        "title": "Más Apps de FatCatGameStudio",
+        "cozyAppTitle": "Cozy Pomodoro",
+        "cozyAppDesc": "Un temporizador Pomodoro acogedor para una productividad relajada. ¡Completa logros para desbloquear hermosos temas animados!",
+        "noxNotesTitle": "Nox Notes",
+        "noxNotesDesc": "Notas y apuntes estéticos. Escribe tus pensamientos en un entorno hermoso y sin distracciones.",
+        "downloadPlayStore": "Google Play",
+        "downloadAppStore": "App Store"
     }
 }

@@ -24,5 +24,5 @@ export function proxy(request: NextRequest) {
 
 export const config = {
     // Match only internationalized pathnames
-    matcher: ['/', '/(es|en)/:path*', '/((?!api|_next|_static|_vercel|[\\w-]+\\.\\w+).*)']
+    matcher: ['/', '/(es|en)/:path*', '/((?!api|_next|_static|_vercel|logos|.*\\..*).*)']
 };

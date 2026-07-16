@@ -144,5 +144,14 @@
         "title": "SafeBite | Milk Label Scan",
         "description": "Review ingredient labels for possible milk-related terms directly on your phone. Fast, private, and useful when signal is limited.",
         "keywords": "milk label scan, ingredient label review, CMPA, APLV, dairy terms, works on your phone"
+    },
+    "OtherApps": {
+        "title": "More Apps by FatCatGameStudio",
+        "cozyAppTitle": "Cozy Pomodoro",
+        "cozyAppDesc": "A simple, cozy Pomodoro timer for calm productivity. Complete achievements to unlock beautifully animated themes!",
+        "noxNotesTitle": "Nox Notes",
+        "noxNotesDesc": "Aesthetic & minimalist notes. Write your thoughts in a beautiful, distraction-free environment.",
+        "downloadPlayStore": "Google Play",
+        "downloadAppStore": "App Store"
     }
 }

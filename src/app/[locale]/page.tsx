@@ -5,6 +5,7 @@ import Features from "@/components/sections/Features";
 import ProblemSolution from "@/components/sections/ProblemSolution";
 import Scenarios from "@/components/sections/Scenarios";
 import Pricing from "@/components/sections/Pricing";
+import OtherApps from "@/components/sections/OtherApps";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <Scenarios />
         <Pricing />
         <InfoSection />
+        <OtherApps />
       </main>
       <Footer />
     </div>
