@@ -3,11 +3,16 @@
 import { useTranslations, useLocale } from 'next-intl';
 import { Link, usePathname } from '@/i18n/routing';
 import { routing } from '@/i18n/routing';
+import { useStoreLinks } from '@/lib/appRegistry';
 
 export default function Footer() {
     const t = useTranslations('Footer');
     const pathname = usePathname();
     const currentLocale = useLocale();
+    const noxLinks = useStoreLinks('noxNotes');
+    const cozyLinks = useStoreLinks('cozyPomodoro');
+    const noxUrl = noxLinks.android || noxLinks.ios;
+    const cozyUrl = cozyLinks.ios || cozyLinks.android;
     type Locale = (typeof routing.locales)[number];
 
     const languages: Array<{ code: Locale; label: string; flag: string }> = [
@@ -47,18 +52,24 @@ export default function Footer() {
                 </ul>
             </nav>
 
-            <div className="flex flex-col items-center gap-2">
-                <p className="text-sm font-bold text-subtext opacity-80">{currentLocale === 'es' ? 'Nuestras otras apps' : 'Our other apps'}</p>
-                <div className="flex flex-wrap justify-center gap-4">
-                    <a href="https://play.google.com/store/apps/details?id=com.fatcatgamestudio.noxnotes" target="_blank" rel="noopener noreferrer" className="text-sm text-subtext hover:text-primary transition-colors font-medium">
-                        Nox Notes
-                    </a>
-                    <span className="text-subtext/30">•</span>
-                    <a href="https://apps.apple.com/es/app/cozy-pomodoro-timer-enfoque/id6759178972" target="_blank" rel="noopener noreferrer" className="text-sm text-subtext hover:text-primary transition-colors font-medium">
-                        Cozy Pomodoro
-                    </a>
+            {(noxUrl || cozyUrl) && (
+                <div className="flex flex-col items-center gap-2">
+                    <p className="text-sm font-bold text-subtext opacity-80">{currentLocale === 'es' ? 'Nuestras otras apps' : 'Our other apps'}</p>
+                    <div className="flex flex-wrap justify-center gap-4">
+                        {noxUrl && (
+                            <a href={noxUrl} target="_blank" rel="noopener noreferrer" className="text-sm text-subtext hover:text-primary transition-colors font-medium">
+                                Nox Notes
+                            </a>
+                        )}
+                        {noxUrl && cozyUrl && <span className="text-subtext/30">•</span>}
+                        {cozyUrl && (
+                            <a href={cozyUrl} target="_blank" rel="noopener noreferrer" className="text-sm text-subtext hover:text-primary transition-colors font-medium">
+                                Cozy Pomodoro
+                            </a>
+                        )}
+                    </div>
                 </div>
-            </div>
+            )}
 
             <div className="flex flex-wrap items-center justify-center gap-3" role="group" aria-label="Language selector">
                 {languages.map((lang) => (
