@@ -18,6 +18,7 @@ type Registry = {
 };
 
 const REGISTRY_URL = "https://fatcat-app-registry.vercel.app/apps.json";
+const REFRESH_INTERVAL_MS = 5 * 60 * 1000;
 
 const fallbackApps: Record<string, RegistryApp> = {
   safebite: {
@@ -60,20 +61,36 @@ export function useStoreLinks(appId: string) {
 
   useEffect(() => {
     let mounted = true;
-    fetch(REGISTRY_URL)
-      .then((response) => response.json() as Promise<Registry>)
-      .then((registry) => {
+    const refresh = async () => {
+      try {
+        const response = await fetch(REGISTRY_URL, { cache: "no-store" });
+        if (!response.ok) return;
+        const registry = await response.json() as Registry;
+        if (!registry || typeof registry.apps !== "object" || !registry.apps) return;
         if (!mounted) return;
-        const app = registry.apps?.[appId] || fallbackApps[appId];
+        const app = registry.apps[appId] || fallbackApps[appId];
         setLinks({
           ios: pickStoreUrl(app, "ios"),
           android: pickStoreUrl(app, "android"),
         });
-      })
-      .catch(() => undefined);
+      } catch {
+        // Preserve the safe bundled links when the public feed is unavailable.
+      }
+    };
+
+    void refresh();
+    const refreshWhenVisible = () => {
+      if (document.visibilityState === "visible") void refresh();
+    };
+    window.addEventListener("focus", refreshWhenVisible);
+    document.addEventListener("visibilitychange", refreshWhenVisible);
+    const interval = window.setInterval(() => void refresh(), REFRESH_INTERVAL_MS);
 
     return () => {
       mounted = false;
+      window.removeEventListener("focus", refreshWhenVisible);
+      document.removeEventListener("visibilitychange", refreshWhenVisible);
+      window.clearInterval(interval);
     };
   }, [appId]);
 
