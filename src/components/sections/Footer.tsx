@@ -30,6 +30,11 @@ export default function Footer() {
                         </Link>
                     </li>
                     <li>
+                        <Link href="/delete-account" className="text-sm text-subtext hover:text-primary transition-colors font-medium">
+                            {t('deleteAccount')}
+                        </Link>
+                    </li>
+                    <li>
                         <Link href="/terms" className="text-sm text-subtext hover:text-primary transition-colors font-medium">
                             {t('terms')}
                         </Link>

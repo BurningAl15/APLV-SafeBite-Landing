@@ -8,7 +8,7 @@ export function proxy(request: NextRequest) {
     const { pathname } = request.nextUrl;
 
     // List of "naked" paths that should be redirected to a localized version
-    const nakedPaths = ['/privacy', '/terms', '/support', '/age-rating', '/credits'];
+    const nakedPaths = ['/privacy', '/terms', '/support', '/age-rating', '/credits', '/delete-account'];
 
     if (nakedPaths.includes(pathname)) {
         // Redirige a la versión por defecto (en) si se accede sin prefijo
