@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl';
 import LegalLayout from '@/components/LegalLayout';
+import { Link } from '@/i18n/routing';
 
 export default function PrivacyPage() {
     const t = useTranslations('Privacy');
@@ -31,6 +32,9 @@ export default function PrivacyPage() {
             <section className="mb-10">
                 <h2 className="text-2xl font-bold text-text mb-4">{t('rightsTitle')}</h2>
                 <p className="text-text leading-7">{t('rightsBody')}</p>
+                <Link href="/delete-account" className="inline-flex mt-4 font-bold text-primary hover:underline">
+                    {t('deletionLink')}
+                </Link>
             </section>
 
             <section className="mb-10 bg-red-50 border border-red-100 rounded-2xl p-6">

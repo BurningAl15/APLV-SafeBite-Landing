@@ -4,11 +4,11 @@ import { routing } from './i18n/routing';
 
 const intlMiddleware = createMiddleware(routing);
 
-export default function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
     const { pathname } = request.nextUrl;
 
     // List of "naked" paths that should be redirected to a localized version
-    const nakedPaths = ['/privacy', '/terms', '/support', '/age-rating', '/credits'];
+    const nakedPaths = ['/privacy', '/terms', '/support', '/age-rating', '/credits', '/delete-account'];
 
     if (nakedPaths.includes(pathname)) {
         // Redirige a la versión por defecto (en) si se accede sin prefijo
@@ -24,5 +24,5 @@ export default function middleware(request: NextRequest) {
 
 export const config = {
     // Match only internationalized pathnames
-    matcher: ['/', '/(es|en)/:path*', '/((?!api|_next|_static|_vercel|[\\w-]+\\.\\w+).*)']
+    matcher: ['/', '/(es|en)/:path*', '/((?!api|_next|_static|_vercel|logos|.*\\..*).*)']
 };

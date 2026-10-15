@@ -104,13 +104,9 @@ export default function InfoSection() {
                     </div>
                     <h2 className="text-red-800 font-bold text-xl m-0">{t('emergencyTitle')}</h2>
                 </div>
-                <p className="text-red-800 font-bold mb-2 m-0">{t('severeSymptoms')}</p>
-                <p className="text-red-700 text-sm mb-5 leading-5 whitespace-pre-line m-0">
-                    {t('symptomsBody')}
-                </p>
-                <div className="bg-red-200 px-4 py-3.5 rounded-xl flex flex-col items-center justify-center gap-1">
-                    <span className="text-red-900 font-bold uppercase tracking-wide text-sm">{t('emergencyStep1')}</span>
-                    <span className="text-red-900 font-bold uppercase tracking-wide text-sm">{t('emergencyStep2')}</span>
+                <p className="text-red-800 font-bold mb-4 leading-relaxed m-0">{t('severeSymptoms')}</p>
+                <div className="bg-red-200/50 border border-red-200 px-4 py-3.5 rounded-2xl flex flex-col gap-1">
+                    <p className="text-red-900 font-semibold text-sm leading-relaxed m-0">{t('epinephrineNotice')}</p>
                 </div>
             </div>
 

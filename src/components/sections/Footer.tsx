@@ -2,13 +2,20 @@
 
 import { useTranslations, useLocale } from 'next-intl';
 import { Link, usePathname } from '@/i18n/routing';
+import { routing } from '@/i18n/routing';
+import { useStoreLinks } from '@/lib/appRegistry';
 
 export default function Footer() {
     const t = useTranslations('Footer');
     const pathname = usePathname();
     const currentLocale = useLocale();
+    const noxLinks = useStoreLinks('noxNotes');
+    const cozyLinks = useStoreLinks('cozyPomodoro');
+    const noxUrl = noxLinks.android || noxLinks.ios;
+    const cozyUrl = cozyLinks.ios || cozyLinks.android;
+    type Locale = (typeof routing.locales)[number];
 
-    const languages = [
+    const languages: Array<{ code: Locale; label: string; flag: string }> = [
         { code: 'en', label: 'English', flag: '🇺🇸' },
         { code: 'es', label: 'Español', flag: '🇪🇸' },
     ];
@@ -20,6 +27,11 @@ export default function Footer() {
                     <li>
                         <Link href="/privacy" className="text-sm text-subtext hover:text-primary transition-colors font-medium">
                             {t('privacy')}
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/delete-account" className="text-sm text-subtext hover:text-primary transition-colors font-medium">
+                            {t('deleteAccount')}
                         </Link>
                     </li>
                     <li>
@@ -45,12 +57,31 @@ export default function Footer() {
                 </ul>
             </nav>
 
+            {(noxUrl || cozyUrl) && (
+                <div className="flex flex-col items-center gap-2">
+                    <p className="text-sm font-bold text-subtext opacity-80">{currentLocale === 'es' ? 'Nuestras otras apps' : 'Our other apps'}</p>
+                    <div className="flex flex-wrap justify-center gap-4">
+                        {noxUrl && (
+                            <a href={noxUrl} target="_blank" rel="noopener noreferrer" className="text-sm text-subtext hover:text-primary transition-colors font-medium">
+                                Nox Notes
+                            </a>
+                        )}
+                        {noxUrl && cozyUrl && <span className="text-subtext/30">•</span>}
+                        {cozyUrl && (
+                            <a href={cozyUrl} target="_blank" rel="noopener noreferrer" className="text-sm text-subtext hover:text-primary transition-colors font-medium">
+                                Cozy Pomodoro
+                            </a>
+                        )}
+                    </div>
+                </div>
+            )}
+
             <div className="flex flex-wrap items-center justify-center gap-3" role="group" aria-label="Language selector">
                 {languages.map((lang) => (
                     <Link
                         key={lang.code}
-                        href={pathname as any}
-                        locale={lang.code as any}
+                        href={pathname}
+                        locale={lang.code}
                         aria-label={`Switch language to ${lang.label}`}
                         aria-current={currentLocale === lang.code ? 'true' : undefined}
                         className={`flex items-center gap-2 px-5 py-2.5 rounded-2xl text-sm font-bold transition-all shadow-sm border ${currentLocale === lang.code
@@ -64,16 +95,21 @@ export default function Footer() {
                 ))}
             </div>
 
-            <div className="flex flex-col gap-1">
-                <p className="text-sm text-subtext font-medium opacity-60">
-                    {t.rich('author', {
-                        heart: (chunks) => <span className="text-danger px-1" aria-hidden="true">{chunks}</span>,
-                        name: (chunks) => <span className="font-bold">{chunks}</span>
-                    })}
+            <div className="flex flex-col items-center gap-4 max-w-xl mx-auto">
+                <p className="text-xs text-subtext/60 leading-relaxed max-w-lg">
+                    {t('disclaimer')}
                 </p>
-                <p className="text-xs text-subtext/40 tracking-wide font-semibold">
-                    {t('product')}
-                </p>
+                <div className="flex flex-col gap-1">
+                    <p className="text-sm text-subtext font-medium opacity-60">
+                        {t.rich('author', {
+                            heart: (chunks) => <span className="text-danger px-1" aria-hidden="true">{chunks}</span>,
+                            name: (chunks) => <span className="font-bold">{chunks}</span>
+                        })}
+                    </p>
+                    <p className="text-xs text-subtext/40 tracking-wide font-semibold">
+                        {t('product')}
+                    </p>
+                </div>
             </div>
         </footer>
     );

@@ -1,17 +1,20 @@
 # SafeBite Landing Page
 
-A high-performance, production-ready landing page for **SafeBite**, a mobile application designed for families managing Cow's Milk Protein Allergy (CMPA/APLV). 
+A bilingual landing page for **SafeBite**, an informational mobile app that helps people review food labels for possible cow's-milk-related ingredients (CMPA/APLV context).
 
 This project explores a modern tech stack focused on accessibility, internationalization (i18n), and SEO optimization.
 
 ## 📱 Product Overview: SafeBite
 
-SafeBite is an essential mobile companion for families living with **Cow's Milk Protein Allergy (CMPA/APLV)**. The app simplifies grocery shopping by providing:
+SafeBite is an informational mobile companion for people reviewing food labels for possible cow's-milk-related ingredients (CMPA/APLV context). It helps make label review quicker while keeping the full physical label as the source of truth.
 
-- **Instant Ingredient Scanning:** Using local OCR to identify hidden dairy derivatives (casein, whey, etc.) in seconds.
-- **100% Offline Intelligence:** No internet required—works perfectly inside supermarkets or basements where signal is weak.
-- **Privacy-First Design:** All image processing happens on-device; no personal data or photos are ever sent to external servers.
-- **Peace of Mind:** Designed to reduce the anxiety of label reading and prevent accidental allergic reactions.
+- **Fast Ingredient Review:** On-device OCR and local term matching highlight possible milk-related ingredients and trace warnings.
+- **Offline Main Scan:** The core image-to-text and ingredient review flow runs on the device without an internet connection.
+- **Photo privacy:** Product photos are not uploaded for OCR or scan-history sync. Account, scan-history sync, analytics, diagnostics, ads, and purchase status can involve the services described on the localized Privacy page.
+- **Guest or account use:** Scan without creating an account; guest scan history is temporary and device-local. An account can keep a cloud-synced scan history.
+- **English and Spanish:** The app detects the device language on first launch and lets the user switch languages later.
+- **Daily free use and Premium:** The free tier includes three scans per day, with optional extra-scan paths. Premium removes the scan limit and rewarded ads; current subscription options and prices are shown by the relevant store inside the app.
+- **No safety certification:** Results are informational. Users must read the complete package label and consult qualified healthcare professionals for medical decisions.
 
 ## 🚀 Key Technical Features
 
@@ -47,12 +50,11 @@ This landing page serves as the official metadata hub for SafeBite's store submi
 - **Age Rating:** [Rating Declaration](https://safe-bite-landing.vercel.app/en/age-rating)
 - **Smart App Banner:** Safari-integrated banner for seamless app discovery.
 
-## 🗺️ Pre-Launch Roadmap (Tracking via ShipKit)
+## 📍 Product state
 
-We are currently in the **Polishing Phase**, finalizing the following core components:
-1. **[IN PROGRESS]** Monetization: RevenueCat IAP Integration.
-2. **[IN PROGRESS]** Ads: AdMob Rewarded Scan Implementation.
-3. **[IN PROGRESS]** Core UX: Comprehensive OCR and Photo Accuracy Validation.
+The current app source is version `1.1.0`, with iOS build `86` and Android version code `86` configured. This repository describes implementation; it does not by itself confirm store approval, public rollout, or completion of physical-device purchase/OCR QA. See the app repository's `docs/RELEASE_CHECKPOINT.md` for the dated evidence and open validation items.
+
+Household/family sharing is not currently available in the app. Do not advertise shared family history until the feature flag is re-enabled and the flow is tested.
 
 ## 🛠️ Getting Started
 

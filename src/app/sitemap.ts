@@ -3,7 +3,7 @@ import { MetadataRoute } from 'next';
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = 'https://safe-bite-landing.vercel.app';
     const locales = ['en', 'es'];
-    const paths = ['', '/privacy', '/terms', '/support', '/age-rating', '/credits'];
+    const paths = ['', '/privacy', '/terms', '/support', '/age-rating', '/credits', '/delete-account'];
 
     const sitemapEntries: MetadataRoute.Sitemap = [];
 
