@@ -20,43 +20,16 @@ export default function Pricing() {
             highlighted: false,
         },
         {
-            name: t('weeklyTitle'),
-            price: t('weeklyPrice'),
-            period: t('weeklyPeriod'),
+            name: t('premiumTitle'),
+            price: t('premiumLabel'),
+            period: t('premiumPeriod'),
             features: [
                 t('proFeature1'),
                 t('proFeature2'),
                 t('proFeature3'),
-                t('proFeature4'),
-            ],
-            cta: t('cta'),
-            highlighted: false,
-        },
-        {
-            name: t('monthlyTitle'),
-            price: t('monthlyPrice'),
-            period: t('monthlyPeriod'),
-            features: [
-                t('proFeature1'),
-                t('proFeature2'),
-                t('proFeature3'),
-                t('proFeature4'),
             ],
             cta: t('cta'),
             highlighted: true,
-        },
-        {
-            name: t('yearlyTitle'),
-            price: t('yearlyPrice'),
-            period: t('yearlyPeriod'),
-            features: [
-                t('proFeature1'),
-                t('proFeature2'),
-                t('proFeature3'),
-                t('proFeature4'),
-            ],
-            cta: t('cta'),
-            highlighted: false,
         }
     ];
 
@@ -71,7 +44,7 @@ export default function Pricing() {
                 </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
                 {tiers.map((tier, index) => (
                     <div
                         key={index}
@@ -90,7 +63,7 @@ export default function Pricing() {
                                 {tier.name}
                             </h3>
                             <div className="flex items-baseline gap-1">
-                                <span className="text-4xl font-black tracking-tight">{tier.price}</span>
+                                <span className="text-3xl font-black tracking-tight">{tier.price}</span>
                                 <span className={`text-xs font-bold opacity-80 ${tier.highlighted ? 'text-white' : 'text-subtext'}`}>
                                     {tier.period}
                                 </span>
@@ -127,6 +100,7 @@ export default function Pricing() {
                     </div>
                 ))}
             </div>
+            <p className="text-center text-sm text-subtext mt-8 max-w-2xl mx-auto">{t('priceNote')}</p>
         </section>
     );
 }
